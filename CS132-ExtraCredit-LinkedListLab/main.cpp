@@ -41,6 +41,11 @@ public:
             tail = newNode;
         }
     }
+    // Function to reset the iterator to the beginning of the linked list
+    void resetIterator()
+    {
+        iterator = head;
+    }
 
 };
 
