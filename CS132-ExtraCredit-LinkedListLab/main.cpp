@@ -24,6 +24,24 @@ private:
 
 public:
     DblLinkedList() : head(nullptr), tail(nullptr), iterator(nullptr) {}
+    // Function to add an element to the end of the linked list
+    void push_back(string str)
+    {
+        Node* newNode = new Node(str);
+
+        if (head == nullptr)
+        {
+            head = newNode;
+            tail = newNode;
+        }
+        else
+        {
+            tail->next = newNode;
+            newNode->prev = tail;
+            tail = newNode;
+        }
+    }
+
 };
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
