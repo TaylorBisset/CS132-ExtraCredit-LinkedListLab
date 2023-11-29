@@ -46,6 +46,11 @@ public:
     {
         iterator = head;
     }
+    // Function to check if there are more elements in the linked list to iterate over
+    bool hasMore()
+    {
+        return iterator != nullptr;
+    }
 
 };
 
