@@ -15,8 +15,20 @@ public:
     Node(string value) : data(value), next(nullptr), prev(nullptr) {}
 };
 
+class DblLinkedList 
+{
+private:
+    Node* head;
+    Node* tail;
+    Node* iterator;
+
+public:
+    DblLinkedList() : head(nullptr), tail(nullptr), iterator(nullptr) {}
+};
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Hello World!\n";
 }
