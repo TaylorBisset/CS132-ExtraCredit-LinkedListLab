@@ -51,6 +51,18 @@ public:
     {
         return iterator != nullptr;
     }
+    // Function to move the iterator to the next element in the linked list
+    string next()
+    {
+        if (iterator == nullptr)
+        {
+            return ""; // or throw an exception indicating the end of the list
+        }
+
+        string value = iterator->data;
+        iterator = iterator->next;
+        return value;
+    }
 
 };
 
