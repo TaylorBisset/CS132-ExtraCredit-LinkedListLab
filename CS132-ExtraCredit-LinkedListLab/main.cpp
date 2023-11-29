@@ -64,6 +64,34 @@ public:
         return value;
     }
 
+    // Function to test all the links in the linked list for specific conditions
+    void testConnections()
+    {
+        // Check head->prev should be nullptr
+        if (head != nullptr && head->prev != nullptr)
+        {
+            cout << "Error: head->prev is not nullptr." << endl;
+        }
+
+        // Check tail->next should be nullptr
+        if (tail != nullptr && tail->next != nullptr)
+        {
+            cout << "Error: tail->next is not nullptr." << endl;
+        }
+
+        // Loop through and test one node at a time
+        Node* temp = head;
+        while (temp != nullptr && temp != tail)
+        {
+            // Test if you can travel to the next node and then back through the prev pointer
+            if (temp != temp->next->prev)
+            {
+                cout << "Error: Unable to loop from temp to next and then back to temp." << endl;
+            }
+
+            temp = temp->next;
+        }
+    }
 };
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
