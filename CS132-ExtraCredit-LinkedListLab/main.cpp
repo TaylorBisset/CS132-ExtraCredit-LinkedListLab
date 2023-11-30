@@ -1,5 +1,16 @@
 // main.cpp
 
+/*
+Name:           Taylor Bisset
+Section:        A
+Program Name:   CS132-ExtraCredit-LinkedListLab
+
+Description:
+
+Repo:           https://github.com/TaylorBisset/CS132-ExtraCredit-LinkedListLab
+
+*/
+
 #include <iostream>
 #include <string>
 
