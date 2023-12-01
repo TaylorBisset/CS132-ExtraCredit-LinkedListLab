@@ -5,7 +5,9 @@ Name:           Taylor Bisset
 Section:        A
 Program Name:   CS132-ExtraCredit-LinkedListLab
 
-Description:
+Description:    This C++ program implements a doubly linked list with functionalities like adding elements, 
+                 iterating through the list, and testing link integrity. 
+                The main function demonstrates these features with a sample list of ten elements.
 
 Repo:           https://github.com/TaylorBisset/CS132-ExtraCredit-LinkedListLab
 
